@@ -6,7 +6,7 @@
   <title>Pemilihan Laptop Mahasiswa - AHP</title>
   <link rel="stylesheet" href="assets/style.css">
   <style>
-    /* Tambahan biar subheading pas di tengah dan punya jarak ideal */
+    /* Subheading pas di tengah dan punya jarak ideal */
     .subheading {
       text-align: center;
       font-size: 1.1em;
@@ -15,6 +15,13 @@
       margin-bottom: 35px;
       font-weight: 500;
     }
+    /* Style dasar slide */
+    .step { display: none; }
+    .step.active { display: block; }
+    .btn { padding: 8px 16px; margin: 5px; cursor: pointer; }
+    footer { text-align:center; margin-top:40px; font-size:0.9em; color:#888; }
+    table { border-collapse: collapse; margin: 15px auto; }
+    table, th, td { border: 1px solid #ccc; padding: 5px 10px; text-align: center; }
   </style>
 </head>
 <body>
@@ -84,7 +91,7 @@
 
     <div style="text-align:center;margin-top:25px;">
       <button id="back3" class="btn">⬅️ Kembali</button>
-      <button id="toHistory" class="btn">📜 Lihat Riwayat Pengisian</button>
+      <button id="viewHistory" class="btn">📜 Lihat Riwayat Pengisian</button>
     </div>
   </div>
 
@@ -104,3 +111,4 @@
 <script src="assets/app.js"></script>
 </body>
 </html>
+
