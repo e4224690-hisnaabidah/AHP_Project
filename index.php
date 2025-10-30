@@ -101,7 +101,7 @@
     <div id="historyArea" style="margin-top:25px;"></div>
 
     <div style="text-align:center;margin-top:25px;">
-      <button id="back4" class="btn">⬅️ Kembali ke Hasil</button>
+      <button id="back5" class="btn">⬅️ Kembali ke Hasil</button>
     </div>
   </div>
 
