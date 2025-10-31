@@ -102,8 +102,21 @@
 
     <div style="text-align:center;margin-top:25px;">
       <button id="back5" class="btn">⬅️ Kembali ke Hasil</button>
+      <button id="toSlide6" class="btn">➡️ Lanjut ke Historis Pengisian</button>
     </div>
   </div>
+
+  <!-- ================= SLIDE 6 ================= -->
+  <div class="step" id="step6">
+    <h2>🗂 Historis Pengisian</h2>
+    <p style="text-align:center;">Berisi daftar pengisian sebelumnya dengan tanggal & waktu, link untuk melihat detail, dan tombol hapus.</p>
+    <div id="historisArea" style="margin-top:25px;"></div>
+    <div style="text-align:center; margin-top:25px;">
+      <button id="back6" class="btn">⬅️ Kembali ke Riwayat</button>
+      <button id="clearAllHist" class="btn">🗑 Hapus Semua Historis</button>
+    </div>
+  </div>
+
 
   <footer>✨ Project by Hisna Abidah 💻</footer>
 
@@ -112,3 +125,4 @@
 </body>
 </html>
 
+    

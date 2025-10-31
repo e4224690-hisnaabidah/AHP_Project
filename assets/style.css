@@ -39,23 +39,21 @@ h1, h2 {
 }
 
 /* ====== SUBHEADING ====== */
-/* Subheading di tengah-tengah di bawah h1 */
 .subheading {
   display: block;
-  text-align: center;         /* teks rata tengah */
+  text-align: center;         
   font-size: 1.1rem;
   color: #555;
   font-weight: 500;
-  margin: 20px auto 35px auto; /* jarak atas 20px dari h1, bawah 35px */
+  margin: 20px auto 35px auto; 
   line-height: 1.6;
   background: rgba(245,245,255,0.7);
   padding: 10px 20px;
   border-radius: 10px;
-  width: fit-content;         /* lebar menyesuaikan teks */
+  width: fit-content;         
 }
 
-
-/* ====== NAMES AREA (Kriteria & Alternatif) ====== */
+/* ====== NAMES AREA ====== */
 #namesArea > div {
   display: flex;
   flex-direction: column;
@@ -75,7 +73,7 @@ h1, h2 {
   padding: 6px 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  width: 200px; /* sesuaikan lebar input */
+  width: 200px; 
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   text-align: center;
@@ -198,27 +196,34 @@ input[type="text"]:focus, input[type="number"]:focus {
   opacity: 0.9;
 }
 
-footer {
-  text-align: center;
-  margin-top: 40px;
-  color: #999;
-  font-weight: 500;
+/* ===== kecil / action buttons untuk tabel riwayat ===== */
+.small-btn {
+  padding: 6px 10px;
+  border-radius: 12px;
   font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 4px;
+  cursor: pointer;
+  border: none;
 }
-
-/* ====== IKON ====== */
-.icon-laptop {
-  width: 24px;
-  height: 24px;
-  fill: #333;
+.link-btn {
+  background: rgba(255,255,255,0.85);
+  color: #1a1a1a;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
-
-.icon-cell {
-  width: 40px;
-  text-align: center;
+.del-btn {
+  background: rgba(255,230,230,0.9);
+  color: #a22;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 /* small helpers for result/history tables */
-#resultArea table, #historyArea table { width: 100%; border-collapse: collapse; margin: 10px 0; }
-#resultArea th, #resultArea td, #historyArea th, #historyArea td { padding: 8px; border: 1px solid rgba(255,255,255,0.4); }
-.history-block h4 { margin: 6px 0; }
+#resultArea table, #historyArea table, #historyListArea table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+#resultArea th, #resultArea td, #historyArea th, #historyArea td, #historyListArea th, #historyListArea td { padding: 8px; border: 1px solid rgba(255,255,255,0.4); }
+
+/* responsive tweaks */
+@media (max-width: 800px) {
+  table { width: 100%; font-size: 14px; }
+  #namesArea input.crit, #namesArea input.alt { width: 90%; }
+}
