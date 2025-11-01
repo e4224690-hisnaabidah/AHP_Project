@@ -102,25 +102,61 @@
 
     <div style="text-align:center;margin-top:25px;">
       <button id="back5" class="btn">⬅️ Kembali ke Hasil</button>
-      <button id="toSlide6" class="btn">➡️ Lanjut ke Historis Pengisian</button>
+      <button id="toHistoryRecords" class="btn">📜 Lanjut ke Historis Pengisian</button>
+    </div>
+
+    <!-- ✅ Tombol SELESAI ditaruh di sini -->
+    <div style="text-align:center; margin-top:20px;">
+      <button id="btnSelesai" 
+        style="background:#2ecc71; color:white; border:none; 
+               padding:10px 25px; border-radius:10px; 
+               font-size:18px; cursor:pointer; display:none;">
+        ✅ Selesai
+      </button>
     </div>
   </div>
 
   <!-- ================= SLIDE 6 ================= -->
   <div class="step" id="step6">
     <h2>🗂 Historis Pengisian</h2>
-    <p style="text-align:center;">Berisi daftar pengisian sebelumnya dengan tanggal & waktu, link untuk melihat detail, dan tombol hapus.</p>
-    <div id="historisArea" style="margin-top:25px;"></div>
+    <table border="1" cellpadding="6" style="border-collapse:collapse; margin:auto; width:90%;" id="historisTable">
+      <thead style="background:#f7f7f7;">
+        <tr>
+          <th>No</th>
+          <th>Nama Data</th>
+          <th>Tanggal & Waktu</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="historisArea">
+        <tr>
+          <td colspan="4" style="text-align:center;">Belum ada data historis pengisian.</td>
+        </tr>
+      </tbody>
+    </table>
+
     <div style="text-align:center; margin-top:25px;">
       <button id="back6" class="btn">⬅️ Kembali ke Riwayat</button>
       <button id="clearAllHist" class="btn">🗑 Hapus Semua Historis</button>
     </div>
   </div>
 
-
   <footer>✨ Project by Hisna Abidah 💻</footer>
 
+</div> <!-- Penutup .container -->
+
+<!-- POPUP SUKSES -->
+<div id="successPopup"
+     style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+            background:rgba(0,0,0,0.6); align-items:center; justify-content:center; z-index:9999;">
+  <div style="background:white; padding:30px 50px; border-radius:15px;
+              text-align:center; box-shadow:0 0 15px rgba(0,0,0,0.3);">
+    <div style="font-size:50px;">✅</div>
+    <h2>Data Berhasil Disimpan!</h2>
+    <p>Terima kasih sudah menggunakan metode AHP 🙏</p>
+  </div>
 </div>
+
 <script src="assets/app.js"></script>
 </body>
 </html>

@@ -227,3 +227,51 @@ input[type="text"]:focus, input[type="number"]:focus {
   table { width: 100%; font-size: 14px; }
   #namesArea input.crit, #namesArea input.alt { width: 90%; }
 }
+
+.success-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.success-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: popIn 0.4s ease;
+}
+
+.success-box h2 {
+  color: #2ecc71;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.success-box p {
+  font-size: 17px;
+  color: #555;
+}
+
+.success-icon {
+  font-size: 50px;
+  color: #2ecc71;
+  margin-bottom: 10px;
+  animation: bounce 0.8s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
